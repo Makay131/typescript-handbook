@@ -15,6 +15,7 @@ import UserProvider from './components/context/UserContext';
 import User from './components/state/User';
 import Private from './components/auth/Private';
 import Profile from './components/auth/Profile';
+import {List} from './components/generics/List';
 
 function App() {
   const personName = {
@@ -55,6 +56,8 @@ function App() {
         <User />
       </UserProvider>
       <Private isLoggedIn={true} component={Profile} />
+      <List items={['Batman', 'Superman', 'Wonder Woman']} onClick={(item: any) => console.log(item)} />
+      <List items={[1, 2, 3]} onClick={(item: any) => console.log(item)} />
     </div>
   );
 }
