@@ -8,7 +8,8 @@ type ListProps<T> = {
     items: T[],
     onClick: (value: T) => void
 }
-
+// --> If you want anything as the type then constraint will look like --> T extends {}
+// --> If you want an object with id has to be passed in, then ---> T extends { id: number } 
 export const List = <T extends {}>({ items, onClick }: ListProps<T>) => {
   return (
     <div>
