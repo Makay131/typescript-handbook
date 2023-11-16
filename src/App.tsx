@@ -19,6 +19,7 @@ import {List} from './components/generics/List';
 import RandomNumber from './components/restriction/RandomNumber';
 import Toast from './components/templateLiterals/Toast';
 import BaseButton from './components/baseComponents/BaseButton';
+import Text from './components/polymorphic/Text';
 
 function App() {
   const personName = {
@@ -64,6 +65,9 @@ function App() {
       <RandomNumber value={10} isPositive={true} />
       <Toast position="center-left" />
       <BaseButton variant="primary" onClick={() => {}}>BaseButton - Primary</BaseButton>
+      <Text as="h1" size="lg">Heading</Text>
+      <Text as="p" size="md">Paragraph</Text>
+      <Text as="label" htmlFor="someID" size="sm" color="secondary">Label</Text>
     </div>
   );
 }
