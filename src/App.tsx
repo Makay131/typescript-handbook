@@ -17,6 +17,8 @@ import Private from './components/auth/Private';
 import Profile from './components/auth/Profile';
 import {List} from './components/generics/List';
 import RandomNumber from './components/restriction/RandomNumber';
+import Toast from './components/templateLiterals/Toast';
+import BaseButton from './components/baseComponents/BaseButton';
 
 function App() {
   const personName = {
@@ -60,6 +62,8 @@ function App() {
       <List items={['Batman', 'Superman', 'Wonder Woman']} onClick={(item: any) => console.log(item)} />
       <List items={[1, 2, 3]} onClick={(item: any) => console.log(item)} />
       <RandomNumber value={10} isPositive={true} />
+      <Toast position="center-left" />
+      <BaseButton variant="primary" onClick={() => {}}>BaseButton - Primary</BaseButton>
     </div>
   );
 }
