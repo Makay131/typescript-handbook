@@ -1,9 +1,9 @@
-import React from 'react';
-
 type GreetProps = {
   name: string,
   messageCount?: number,
-  isLoggedIn: boolean
+  isLoggedIn: boolean,
+  //padding?: number[] ---> any length  
+  padding?: [number, number, number, number] // This is called Tuple Type --> length is restricted so it is not like number[]
 }
 
 export const Greet = (props: GreetProps) => {

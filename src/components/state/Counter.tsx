@@ -22,7 +22,7 @@ function reducer(state: CounterState, action: CounterAction) {
             return {...state, count: state.count + action.payload}
         case 'decrement':
             return {...state, count: state.count - action.payload}
-        case 'decrement':
+        case 'reset':
             return initialState;
         default:
             throw new Error('Unknown action type')
