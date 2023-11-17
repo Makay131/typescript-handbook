@@ -1,4 +1,16 @@
 /* GENERICS */
+
+/*
+NOTE
+    const convertToArray = <T,>(value: T): T[] => {
+        return [value];
+    };
+    //above we use <T,> becuase tsx --> jsx will be considered as <T /> if we dont type comma after T
+    function convertToArray<T>(value: T): T[] {
+        return [value];
+    };
+*/
+
 /* DOWN BELOW IS ONLY FOR STRING BUT WHAT IF OUR LIST COULD HAVE NUMBERS OR OBJECTS */
 // type ListProps = {
 //     items: string[],

@@ -1,1 +1,2 @@
 /// <reference types="react-scripts" />
+/* FOR 3rd PARTY LIBRARIES THAT DO NOT COME WITH TYPESCRIPT SPECIFICATIONS */
